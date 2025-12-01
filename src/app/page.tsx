@@ -9,40 +9,40 @@ import Link from "next/link";
 export default function Home() {
   const services = [
     {
-      title: "Signature Haircut & Style",
-      duration: "60m",
+      name: "Signature Haircut & Style",
       price: "₹1,200",
-      description: "Consultation, precision cut, wash, and blow-dry styling tailored to your face shape.",
+      desc: "Consultation, precision cut, wash, and blow-dry styling tailored to your face shape.",
+      category: "Hair Care"
     },
     {
-      title: "Royal Gold Facial",
-      duration: "90m",
+      name: "Royal Gold Facial",
       price: "₹3,500",
-      description: "Luxurious 24k gold facial treatment for instant glow and anti-aging benefits.",
+      desc: "Luxurious 24k gold facial treatment for instant glow and anti-aging benefits.",
+      category: "Skin & Facials"
     },
     {
-      title: "Bridal Makeup HD",
-      duration: "180m",
+      name: "Bridal Makeup HD",
       price: "₹15,000",
-      description: "High-definition bridal makeup with premium international products and trial session.",
+      desc: "High-definition bridal makeup with premium international products and trial session.",
+      category: "Makeup"
     },
     {
-      title: "Gel Manicure & Pedicure",
-      duration: "90m",
+      name: "Gel Manicure & Pedicure",
       price: "₹2,200",
-      description: "Complete hand and foot spa with long-lasting gel polish of your choice.",
+      desc: "Complete hand and foot spa with long-lasting gel polish of your choice.",
+      category: "Hands & Feet"
     },
     {
-      title: "Keratin Hair Treatment",
-      duration: "120m",
+      name: "Keratin Hair Treatment",
       price: "₹6,000+",
-      description: "Smooth, frizz-free hair for up to 4 months. Price varies by hair length.",
+      desc: "Smooth, frizz-free hair for up to 4 months. Price varies by hair length.",
+      category: "Hair Care"
     },
     {
-      title: "Aromatherapy Massage",
-      duration: "60m",
+      name: "Aromatherapy Massage",
       price: "₹2,500",
-      description: "Relaxing full-body massage with essential oils to relieve stress and tension.",
+      desc: "Relaxing full-body massage with essential oils to relieve stress and tension.",
+      category: "Body Spa"
     },
   ];
 
@@ -63,7 +63,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 stagger-children">
             {services.map((service) => (
-              <ServiceCard key={service.title} service={service} />
+              <ServiceCard key={service.name} service={service} />
             ))}
           </div>
 

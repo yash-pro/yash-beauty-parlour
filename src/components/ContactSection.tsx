@@ -57,8 +57,17 @@ export default function ContactSection() {
                             allowFullScreen
                             loading="lazy"
                             title="Salon Location"
-                            className="grayscale hover:grayscale-0 transition-all duration-500"
+                            className="w-full h-full"
                         />
+
+                        <a
+                            href="https://maps.google.com/maps?ll=23.187668,79.920502&z=13&t=m&hl=en&gl=IN&mapclient=embed&cid=1160378036573732860"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="absolute top-4 right-4 bg-white/90 backdrop-blur px-4 py-2 rounded-full text-xs font-bold text-foreground shadow-lg hover:bg-gold hover:text-white transition-colors flex items-center gap-2"
+                        >
+                            <span>↗</span> Open in Maps
+                        </a>
 
                         <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur p-4 rounded-xl shadow-lg border border-white/50">
                             <div className="flex items-start gap-3">

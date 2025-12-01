@@ -2,45 +2,43 @@
 @import "tailwindcss";
 
 :root {
-  /* Premium Warm Palette */
+  /* Default Theme (Warm/Gold) */
   --background: #FFFCF8;
-  /* Warm off-white */
   --foreground: #111111;
-  /* Almost Black for max contrast */
-
   --primary: #B8860B;
-  /* Dark Goldenrod for better text readability */
   --primary-hover: #D4AF37;
-
   --secondary: #F5E6D3;
-  /* Champagne/Beige */
   --accent: #8C7B70;
-  /* Warm Taupe */
 
   --font-sans: 'Inter', sans-serif;
   --font-serif: 'Playfair Display', serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-primary: var(--primary);
-  --color-primary-hover: var(--primary-hover);
-  --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
-
-  --font-sans: var(--font-sans);
-  --font-serif: var(--font-serif);
+[data-theme='rose'] {
+  --background: #FFF0F5;
+  --foreground: #2D0A12;
+  --primary: #D81B60;
+  --primary-hover: #E91E63;
+  --secondary: #F8BBD0;
+  --accent: #880E4F;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1A1816;
-    /* Dark warm gray */
-    --foreground: #F5E6D3;
-    /* Champagne text */
-    --secondary: #2D2A26;
-  }
+[data-theme='ocean'] {
+  --background: #F0F8FF;
+  --foreground: #0A192F;
+  --primary: #0077B6;
+  --primary-hover: #0096C7;
+  --secondary: #CAF0F8;
+  --accent: #023E8A;
+}
+
+[data-theme='dark'] {
+  --background: #1A1816;
+  --foreground: #F5E6D3;
+  --primary: #B8860B;
+  --primary-hover: #D4AF37;
+  --secondary: #2D2A26;
+  --accent: #8C7B70;
 }
 
 body {

@@ -27,14 +27,22 @@ export default function ContactPage() {
                     <div className="p-6 border border-secondary/20 rounded-xl">
                         <div className="text-4xl mb-4">📞</div>
                         <h3 className="font-serif font-bold text-lg mb-2">Phone</h3>
-                        <p className="text-foreground/70">+91 94249 27200</p>
-                        <p className="text-foreground/70">+91 94249 27200</p>
+                        <p className="text-foreground/70">
+                            <a href="tel:+919424927200" className="hover:text-gold transition-colors">+91 94249 27200</a>
+                        </p>
+                        <p className="text-foreground/70">
+                            <a href="tel:+919424927200" className="hover:text-gold transition-colors">+91 94249 27200</a>
+                        </p>
                     </div>
                     <div className="p-6 border border-secondary/20 rounded-xl">
                         <div className="text-4xl mb-4">✉️</div>
                         <h3 className="font-serif font-bold text-lg mb-2">Email</h3>
-                        <p className="text-foreground/70">yashparlourjbp@gmail.com</p>
-                        <p className="text-foreground/70">yashparlourjbp@gmail.com</p>
+                        <p className="text-foreground/70">
+                            <a href="mailto:yashparlourjbp@gmail.com" className="hover:text-gold transition-colors">yashparlourjbp@gmail.com</a>
+                        </p>
+                        <p className="text-foreground/70">
+                            <a href="mailto:yashparlourjbp@gmail.com" className="hover:text-gold transition-colors">yashparlourjbp@gmail.com</a>
+                        </p>
                     </div>
                     <div className="p-6 border border-secondary/20 rounded-xl">
                         <div className="text-4xl mb-4">⏰</div>

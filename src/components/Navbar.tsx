@@ -3,6 +3,7 @@
 
 import Link from 'next/link';
 import React, { useState } from 'react';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,6 +33,9 @@ export default function Navbar() {
             Contact
             <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full"></span>
           </Link>
+
+          <ThemeSwitcher />
+
           <Link
             href="/contact"
             className="px-5 py-2 bg-gold text-white text-sm font-medium rounded-full hover:bg-primary-hover transition-all shadow-md hover:shadow-lg"
@@ -64,6 +68,11 @@ export default function Navbar() {
             <Link href="/services" className="text-sm font-medium hover:text-gold" onClick={() => setIsOpen(false)}>Services</Link>
             <Link href="/about" className="text-sm font-medium hover:text-gold" onClick={() => setIsOpen(false)}>About</Link>
             <Link href="/contact" className="text-sm font-medium hover:text-gold" onClick={() => setIsOpen(false)}>Contact</Link>
+
+            <div className="py-2">
+              <ThemeSwitcher />
+            </div>
+
             <Link
               href="/contact"
               className="px-5 py-2 bg-gold text-white text-sm font-medium rounded-full text-center"

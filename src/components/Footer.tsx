@@ -11,11 +11,22 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-serif font-bold text-gold mb-4">Yash Beauty Parlour</h3>
             <div className="space-y-2 text-sm">
-              <p>📍 Jain Mandir Road, M75</p>
-              <p>Shiv Nagar Main Rd, Damoh Naka</p>
-              <p>Jabalpur, Madhya Pradesh 482002</p>
-              <p>📧 yashparlourjbp@gmail.com</p>
-              <p>📞 +91 94249 27200</p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Yash+Beauty+Parlour+Jabalpur"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block hover:text-gold transition-colors"
+              >
+                <p>📍 Jain Mandir Road, M75</p>
+                <p>Shiv Nagar Main Rd, Damoh Naka</p>
+                <p>Jabalpur, Madhya Pradesh 482002</p>
+              </a>
+              <a href="mailto:yashparlourjbp@gmail.com" className="block hover:text-gold transition-colors">
+                📧 yashparlourjbp@gmail.com
+              </a>
+              <a href="tel:+919424927200" className="block hover:text-gold transition-colors">
+                📞 +91 94249 27200
+              </a>
             </div>
           </div>
 
